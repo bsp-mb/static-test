@@ -10,6 +10,7 @@
             ]
         }
     ],
+
     "responseOverrides": {
         "401": {
             "statusCode": 302,
@@ -19,4 +20,16 @@
             "rewrite": "/404.html"
         }
     }
+
+    "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/aff61b03-9744-4506-9a7c-473f88d004cf/v2.0",
+          "clientIdSettingName": "AZURE_CLIENT_ID",
+          "clientSecretSettingName": "AZURE_CLIENT_SECRET_APP_SETTING_NAME"
+        }
+      }
+    }
+  }
 }
