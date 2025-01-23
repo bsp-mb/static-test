@@ -19,7 +19,7 @@
         "404": {
             "rewrite": "/404.html"
         }
-    }
+    },
 
     "auth": {
     "identityProviders": {
